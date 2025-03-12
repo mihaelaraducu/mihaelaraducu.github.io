@@ -1,0 +1,187 @@
+@use "general" as *; // Importă toate variabilele fără prefix
+/*
+|----------------------------------------------------------------------------
+	9. SOCIAL / .social-icon
+|----------------------------------------------------------------------------
+*/
+.list-inline.list-social {
+  margin: 0 0 30px;
+  padding: 0;
+  position: relative;
+  z-index: 996;
+}
+.list-social.list-inline > li {
+  display: inline-block;
+  padding: 0;
+}
+.social-icon {
+  border: 1px solid #04b962;
+  border-radius: 8px 2px;
+  color: #04b962;
+  display: block;
+  height: 32px;
+  margin-right: 5px;
+  overflow: hidden;
+  text-align: center;
+  text-shadow: none;
+  width: 32px;
+}
+.social-icon-rounded {
+  border-radius: 50%;
+}
+.social-icon-dark,
+.social-icon-light {
+  border-color: transparent;
+}
+.social-icon-dark {
+  background-color: #444;
+  color: #fff;
+}
+.social-icon-light,
+.footer .social-icon-light {
+  background-color: #f0f0f0;
+  color: #666;
+}
+.social-icon-colored,
+.share-icon .social-icon-colored {
+  border-color: transparent;
+}
+.social-icon.social-icon-small {
+  height: 28px;
+  width: 28px;
+}
+.social-icon.social-icon-large {
+  height: 44px;
+  margin: 0 10px 10px 0;
+  width: 44px;
+}
+.social-icon i {
+  display: block;
+  font-size: 18px;
+  line-height: 32px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.social-icon:hover i:first-child {
+  margin-top: -32px;
+}
+.social-icon.social-icon-small i {
+  font-size: 16px;
+  line-height: 28px;
+}
+.social-icon.social-icon-small:hover i:first-child {
+  margin-top: -28px;
+}
+.social-icon.social-icon-large i {
+  font-size: 34px;
+  line-height: 44px;
+}
+.social-icon.social-icon-large:hover i:first-child {
+  margin-top: -44px;
+}
+
+.social-icon:hover {
+  text-decoration: none;
+}
+.social-icon-colored.social-icon,
+.social-icon:hover {
+  border-color: transparent;
+}
+.social-icon-colored.social-icon-facebook,
+.social-icon-facebook:hover {
+  background-color: #3b5998;
+}
+.social-icon-colored.social-icon-twitter,
+.social-icon-twitter:hover {
+  background-color: #00acee;
+}
+.social-icon-colored.social-icon-gplus,
+.social-icon-gplus:hover {
+  background-color: #dd4b39;
+}
+.social-icon-colored.social-icon-linkedin,
+.social-icon-linkedin:hover {
+  background-color: #0077b5;
+}
+.social-icon-colored.social-icon-vimeo,
+.social-icon-vimeo:hover {
+  background-color: #1ca7cc;
+}
+.social-icon-colored.social-icon-github,
+.social-icon-github:hover {
+  background-color: #011015;
+}
+.social-icon-colored.social-icon-pinterest,
+.social-icon-pinterest:hover {
+  background-color: #cb2027;
+}
+.social-icon-colored.social-icon-dribbble,
+.social-icon-dribbble:hover {
+  background-color: #ec4a89;
+}
+.social-icon-colored.social-icon-rss,
+.social-icon-rss:hover {
+  background-color: #fb9f3c;
+}
+.social-icon-colored.social-icon-flickr,
+.social-icon-flickr:hover {
+  background-color: #ff0084;
+}
+.social-icon-colored.social-icon-instagram,
+.social-icon-instagram:hover {
+  background-color: #bc2a8d;
+}
+.social-icon-colored.social-icon-youtube,
+.social-icon-youtube:hover {
+  background-color: #bb0000;
+}
+.social-icon-colored.social-icon-skype,
+.social-icon-skype:hover {
+  background-color: #12a5f4;
+}
+.social-icon-colored.social-icon-yahoo,
+.footer .social-icon-yahoo:hover {
+  background-color: #7b0099;
+}
+.social-icon-colored.social-icon-tumblr,
+.social-icon-tumblr:hover {
+  background-color: #32506d;
+}
+.social-icon i:last-child {
+  color: #fff;
+}
+.social-icon-colored i {
+  color: #fff;
+}
+
+.socials {
+  padding: 1.5rem 0;
+  ul {
+    li {
+      display: inline-block;
+    }
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .ico-circle {
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 500ms ease;
+    &:hover {
+      background-color: $background-color_2;
+      color: $color_5;
+      box-shadow: 0 0 0 3px #cde1f8;
+      transition: all 500ms ease;
+    }
+  }
+}

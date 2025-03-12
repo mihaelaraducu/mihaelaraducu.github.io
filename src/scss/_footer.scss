@@ -1,0 +1,19 @@
+@use "general" as *; // Importă toate variabilele fără prefix
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  text-align: center;
+  color: $color_5;
+  padding: 25px 0;
+  background: #0062d3;
+  .copyright {
+    margin-bottom: 0.3rem;
+  }
+  .credits {
+    margin-bottom: 0;
+    a {
+      color: $color_5;
+    }
+  }
+}

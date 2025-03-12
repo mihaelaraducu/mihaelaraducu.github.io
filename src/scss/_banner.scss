@@ -1,0 +1,107 @@
+@use "general" as *; // Importă toate variabilele fără prefix
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+/* ---- particles.js container ---- */
+#particles-js {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 990;
+}
+.hero {
+  height: 100vh;
+  position: relative;
+  color: $color_5;
+  .hero-content {
+    text-align: center;
+    position: absolute;
+  }
+  .overlay-itro {
+    background-color: $background-color_7;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .hero-title {
+    color: $color_5;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .text-slider-items {
+    display: none;
+  }
+}
+.hero-single {
+  height: 350px;
+  .hero-content {
+    margin-top: 30px;
+  }
+  .hero-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  .breadcrumb {
+    background-color: $background-color_8;
+    color: $color_3;
+    .breadcrumb-item {
+      &:before {
+        color: $color_6;
+      }
+    }
+    .breadcrumb-item.active {
+      color: $color_6;
+    }
+    a {
+      color: $color_5;
+    }
+  }
+}
+
+// .intro-content
+.intro-content {
+  .button {
+    position: relative;
+    z-index: 996;
+    color: $color_5 !important;
+    border-color: $border-color_1;
+    height: 4rem !important;
+    line-height: 4rem !important;
+    padding: 0 3rem 0 3rem !important;
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    &:hover {
+      border-color: $border-color_2;
+      box-shadow: 0 0 0 2px $border-color_2;
+      background-color: transparent;
+      color: $color_5;
+    }
+    &:focus {
+      border-color: $border-color_2;
+      background-color: transparent;
+    }
+    &::after {
+      display: inline-block;
+
+      font-family: $font-family_1;
+      font-size: 1.6rem;
+      line-height: inherit;
+      text-align: center;
+      position: relative;
+      left: 1.2rem;
+    }
+  }
+}
