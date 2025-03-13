@@ -1,0 +1,40 @@
+@use "general" as *; // Importă toate variabilele fără prefix
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about-mf {
+    .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .about-img {
+      margin-bottom: 2rem;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+  @media (min-width: 767px) {
+    .about-mf {
+      .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+      }
+    }
+  }
+  .skill-mf {
+    span {
+      color: $color_1;
+    }
+    .progress {
+      background-color: $background-color_4;
+      margin: 0.5rem 0 1.2rem 0;
+      border-radius: 0;
+      height: 0.7rem;
+      .progress-bar {
+        height: 0.7rem;
+        background-color: $background-color_2;
+      }
+    }
+  }

@@ -1,0 +1,90 @@
+@use "general" as *; // Importă toate variabilele fără prefix
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+@keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .footer-paralax {
+    padding: 4rem 0 0 0;
+  }
+  .contact-mf {
+    margin-top: 4rem;
+  }
+  .php-email-form {
+    .error-message {
+      display: none;
+      color: $color_1;
+      background: #ed3c0d;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+    .sent-message {
+      display: none;
+      color: $color_1;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: $border-top-color_1;
+        animation: animate-loading 1s linear infinite;
+      }
+    }
+    input {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      padding: 10px 15px;
+      &:focus {
+        border-color: $border-color_1;
+      }
+    }
+    textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      padding: 12px 15px;
+      margin-bottom: 0;
+      &:focus {
+        border-color: $border-color_1;
+      }
+    }
+    button[type="submit"] {
+      background: #0078ff;
+      border: 0;
+      padding: 10px 24px;
+      color: $color_1;
+      transition: 0.4s;
+      &:hover {
+        background: #3393ff;
+      }
+    }
+  }
+  @media (min-width: 767px) {
+    .contact-mf {
+      .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+      }
+    }
+  }
