@@ -17,7 +17,7 @@ $color_4: #f5f5f5;
 $color_5: #fff;
 $color_6: #cde1f8;
 $background-color_1: #f5f5f5;
-$background-color_2: #00c4cc;
+$background-color_2: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,196,204,1) 100%);
 $background-color_3: #fff;
 $background-color_4: #cde1f8;
 $background-color_5: #1b1b1b;
@@ -25,6 +25,7 @@ $background-color_6: #0062d3;
 $background-color_7: rgba(0, 0, 0, 0.6);
 $background-color_8: transparent;
 $background-color_9: rgba(255, 255, 255, 0.4);
+$background-color_10: linear-gradient(90deg, rgba(0,0,0,1) 14%, rgba(0,196,204,1) 100%);
 $border-color_1: #cde1f8;
 $border-color_2: #00c4cc;
 $border-top-color_1: #eee;
@@ -252,7 +253,7 @@ a {
   background-position: center center;
 }
 .overlay-mf {
-  background-color: $background-color_2;
+  background: $background-color_10;
   position: absolute;
   top: 0;
   left: 0px;

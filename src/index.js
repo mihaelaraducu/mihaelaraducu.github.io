@@ -13,3 +13,5 @@ import particles from 'particles.js'
 import './js/particles.js'
 
 import'./js/main.js'
+
+import "./js/skill.js"
