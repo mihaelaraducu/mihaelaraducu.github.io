@@ -97,7 +97,7 @@
       list-style: none;
       padding-left: 0;
       margin-bottom: 0;
-      border-left: 4px solid #0078ff;
+      border-left: 4px solid #123e6b;
       margin-top: 1rem;
       li {
         display: inline-block;
@@ -433,13 +433,13 @@
     }
   }
   button[type="submit"] {
-    background: #0078ff;
+    background: #38858d;
     border: 0;
     padding: 10px 24px;
     color: $color_5;
     transition: 0.4s;
     &:hover {
-      background: #3393ff;
+      background: #38858dcb;
     }
   }
 }

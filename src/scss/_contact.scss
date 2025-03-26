@@ -70,13 +70,13 @@
       }
     }
     button[type="submit"] {
-      background: #0078ff;
+      background: #38858d;
       border: 0;
       padding: 10px 24px;
       color: $color_1;
       transition: 0.4s;
       &:hover {
-        background: #3393ff;
+        background: #38858dcb;
       }
     }
   }
