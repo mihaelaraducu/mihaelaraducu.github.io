@@ -1,0 +1,13 @@
+{
+    "title": "Website Building Bootstrap + Webpack",
+    "meniu.home": "Acasă",
+    "meniu.about": "Despre",
+    "meniu.experience": "Experienţă",
+    "meniu.portfolio": "Portofoliu",
+    "meniu.github": "Github-ul meu",
+    "meniu.contact": "Contact",
+    "typed": "Frontend, developer",
+    "ab.name": "Nume: ",
+    "ab.prof": "Profil: ",
+    "ab.phone": "Telefon: "
+  }

@@ -160,7 +160,8 @@ import GLightbox from 'glightbox';
     /**
      * Intro type effect
      */
-
+    setTimeout(function() {
+    // const typed = select('.typed)
     const typed = select('.typed')
     if (typed) {
         let typed_strings = typed.getAttribute('data-typed-items')
@@ -173,6 +174,7 @@ import GLightbox from 'glightbox';
             backDelay: 2000
         });
     }
+}, 2000);
 
     /**
      * Initiate portfolio lightbox 

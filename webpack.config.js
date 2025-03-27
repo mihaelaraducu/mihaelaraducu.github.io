@@ -62,6 +62,14 @@ module.exports = {
                         ignore: ['*.DS_Store', 'Thumbs.db'],
                     },
                 },
+                {
+                    from: path.resolve(paths.source, 'lang'),
+                    to: path.resolve(paths.output, 'lang'),
+                    toType: 'dir',
+                    globOptions: {
+                        ignore: ['*.DS_Store', 'Thumbs.db'],
+                    },
+                },
                 // {
                 //     from: path.resolve(paths.source, 'videos'),
                 //     to: path.resolve(paths.output, 'videos'),

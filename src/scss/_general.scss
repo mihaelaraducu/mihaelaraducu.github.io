@@ -49,6 +49,7 @@ $heart: #fb866a;
 $dm-background: #17191c;
 $dm-text-color: rgba(256, 256, 256, 0.9);
 $dm-text-color-secondary: rgba(256, 256, 256, 0.7);
+$animation-delay: .7s;
 
 //*************************** Theme Styles ****************************/
 // Import theme styles
@@ -305,9 +306,9 @@ a {
   color: $color_1;
 }
 .line-mf {
-  width: 40px;
+  width: 60px;
   height: 5px;
-  background-color: $background-color_2;
+  background: $background-color_2;
   margin: 0 auto;
 }
 .title-box-2 {

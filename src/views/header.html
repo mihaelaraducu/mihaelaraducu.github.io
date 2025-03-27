@@ -8,11 +8,11 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto " href="#work">Work</a></li>
-                <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+                <li><a class="nav-link scrollto active" href="#hero" data-tr="meniu.home">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about" data-tr="meniu.about">About</a></li>
+                <li><a class="nav-link scrollto" href="#resume" data-tr="meniu.experience">Experience</a></li>
+                <li><a class="nav-link scrollto " href="#work" data-tr="meniu.portfolio">Portfolio</a></li>
+                <li><a class="nav-link scrollto " href="#blog" data-tr="meniu.github">My GitHub</a></li>
                 <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -31,7 +31,19 @@
                         <li><a href="#">Drop Down 4</a></li>
                     </ul>
                 </li> -->
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="#contact" data-tr="meniu.contact" >Contact</a></li>
+                <li>
+                    <a data-id="en" href="index.html" onclick="window.changeLanguage('en')">
+                        <img style="max-height:15px" src="images/en.svg" alt="English" />
+                    </a>
+                </li>
+                <li><a data-id="ro" href="index.html" onclick="window.changeLanguage('ro')">
+                        <img style="max-height:15px" src="images/ro.svg" alt="Romana" /></a></li>
+                <li class="me-auto">
+                    <div class="dark-mode-toggle">
+                        <i id="darkModeIcon" class="bi bi-moon"></i>
+                    </div>
+                </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
