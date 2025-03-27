@@ -15,3 +15,5 @@ import './js/particles.js'
 import'./js/main.js'
 
 import "./js/skill.js"
+
+import "./js/githubapi.js"

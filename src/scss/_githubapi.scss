@@ -1,0 +1,48 @@
+@use "general" as *; // Importă toate variabilele fără prefix
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.service-box {
+    background-color: var(--background-color_1);
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    &:hover {
+      .ico-circle {
+        transition: all 500ms ease;
+        color: var(--color_1);
+        background-color: var(--background-color_2);
+        box-shadow: 0 0 0 10px #cde1f8;
+      }
+    }
+    .service-ico {
+      margin-bottom: 1rem;
+      color: var(--color_2);
+    }
+    .ico-circle {
+      transition: all 500ms ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        line-height: 0;
+        font-size: 40px;
+      }
+    }
+    .s-title {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.4rem 0;
+    }
+    .s-description {
+      color: $vueColor;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* number of lines to show */
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
