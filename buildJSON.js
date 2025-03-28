@@ -16,10 +16,21 @@ function buildJSON() {
     });
     $("[data-attr-tr]").each(function () {
         const value = $(this)[0].attribs['data-typed-items']
-        let key = $(this)[0].attribs['data-attr-tr'];
-        wordsTr.push({
-            [key]: value
-        })
+        const value2 = $(this)[0].attribs['placeholder']
+        console.log(value2);
+        if (value !== undefined) {
+            let key = $(this)[0].attribs['data-attr-tr'];
+            wordsTr.push({
+                [key]: value
+            })
+        }
+        if (value2 !== undefined) {
+            let key = $(this)[0].attribs['data-attr-tr'];
+            wordsTr.push({
+                [key]: value2
+            })
+        }
+
     });
     // console.log(wordsTr);
     // Pas 2 transform in json

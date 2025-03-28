@@ -9,5 +9,9 @@
     "ab.name": "Name: ",
     "ab.prof": "Profile: ",
     "ab.phone": "Phone: ",
-    "typed": "Frontend, Developer"
+    "ct.title": "Would you like to collaborate?",
+    "ct.inf": "Whether you need assistance with a frontend project, are looking for a dedicated collaborator for web development, or are interested in innovative technological solutions, I am open to collaboration opportunities!Feel free to fill out the form or send me an email.I look forward to discussing potential collaborations and contributing together to impactful projects.",
+    "typed": "Frontend, Developer",
+    "ct.place.name": "Name",
+    "ct.place.message": "Message"
 }

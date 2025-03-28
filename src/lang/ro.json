@@ -9,5 +9,9 @@
     "typed": "Frontend, developer",
     "ab.name": "Nume: ",
     "ab.prof": "Profil: ",
-    "ab.phone": "Telefon: "
+    "ab.phone": "Telefon: ",
+    "ct.place.name": "Nume",
+    "ct.place.message": "Mesaj",
+    "ct.title": "Doresti să colaboram?",
+    "ct.inf":  "Fie că ai nevoie de asistență într-un proiect frontend, cauți o colaboratoare dedicată pentru dezvoltare web sau ești interesat de soluții tehnologice inovative, sunt deschisă la oportunități de colaborare! Completează formularul sau trimite-mi un email. Aștept cu nerăbdare să discutăm despre posibile colaborări și să contribuim împreună la proiecte de impact."
   }
