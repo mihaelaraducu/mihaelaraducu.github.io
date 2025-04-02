@@ -1,69 +1,64 @@
-// Function to fetch language data
+import GLightbox from 'glightbox';
+
+// Variabilă globală pentru limba curentă
+let currentLangData = {};
+
+// Fetch language data
 async function fetchLanguageData(lang) {
     const response = await fetch(`lang/${lang}.json`);
     return response.json();
 }
-// Function to set the language preference
+
+// Set language and scroll
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
-
-    // Salvează poziția de scroll
     const scrollY = window.scrollY;
     localStorage.setItem('scrollPosition', scrollY);
-
-    //location.reload();
 }
-// Function to update content based on selected language
+
+// Apply translations
 function updateContent(langData) {
-    // alert(JSON.stringify(langData, null, 2));
     if (Object.keys(langData).length > 0) {
         document.querySelectorAll('[data-tr]').forEach(element => {
             const key = element.getAttribute('data-tr');
-            if (key !== 'undefined' || langData[key] !== 'undefined') {
+            if (key && langData[key]) {
                 element.textContent = langData[key];
             }
-
         });
+
         document.querySelectorAll('[data-attr-tr]').forEach(element => {
             const key = element.getAttribute('data-attr-tr');
-            if (key !== 'undefined' || langData[key] !== 'undefined') {
-                // Verifică dacă elementul are atributul placeholder
+            if (key && langData[key]) {
                 if (element.hasAttribute('data-typed-items')) {
                     element.setAttribute('data-typed-items', langData[key]);
                 }
-                // Verifică dacă elementul are atributul placeholder
                 if (element.hasAttribute('placeholder')) {
                     element.setAttribute('placeholder', langData[key]);
                 }
             }
         });
-    } else {
-        console.log("Obiectul este gol!");
     }
-
-
-
 }
 
-// Function to change language
-// !!!Ca sa o putem folosi in fisierul HTML se declara cu window
-window.changeLanguage = function (lang) {
-    //console.log('limba aleasa', lang);
+// Change language (globally accessible)
+window.changeLanguage = async function (lang) {
     setLanguagePreference(lang);
-
-    const langData = fetchLanguageData(lang);
-    updateContent(langData);
-
-
+    currentLangData = await fetchLanguageData(lang);
+    updateContent(currentLangData);
 }
-// Call updateContent() on page load
+
+// On page load
 window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'en';
-    //console.log('limba aleasa2', userPreferredLanguage);
     document.documentElement.setAttribute('lang', userPreferredLanguage);
-    document.querySelector('[data-id= "' + userPreferredLanguage + '"]').classList.add('active');
-    const langData = await fetchLanguageData(userPreferredLanguage);
-    updateContent(langData);
+
+    const langButton = document.querySelector(`[data-id="${userPreferredLanguage}"]`);
+    if (langButton) {
+        langButton.classList.add('active');
+    }
+
+    currentLangData = await fetchLanguageData(userPreferredLanguage);
+    updateContent(currentLangData);
 
     setTimeout(() => {
         const savedPosition = localStorage.getItem("scrollPosition");
@@ -73,6 +68,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                 behavior: "smooth"
             });
         }
-    }, 100); // Așteaptă 100ms înainte de repoziționare
+    }, 100);
 
+    // GLightbox initialization
+    GLightbox();
 });
