@@ -92,6 +92,7 @@
   "proj6.para6": "Layout optimizat pentru diferite dimensiuni de dispozitive",
   "proj6.para7": "Acest proiect a marcat începutul parcursului meu în dezvoltarea frontend. M-a ajutat să înțeleg cum se îmbină structura și stilul pentru a crea experiențe accesibile și prietenoase pe toate dispozitivele.",
   "proj6.para8": "<a href=\"https://mihaelaraducu.github.io/html-css-project/\" target=\"_blank\" style=\"text-decoration: underline; font-weight: bold;\">Vezi proiectul live</a>",
+  "git.noscript": "JavaScript-ul este dezactivat în browserul tău. Te rog să-l activezi pentru a vizualiza conținutul corect.",
   "git.repo": "Repo-ul meu GitHub",
   "git.hub": "Cel mai recent repo GitHub",
   "ct.message": "Trimite-mi un mesaj",

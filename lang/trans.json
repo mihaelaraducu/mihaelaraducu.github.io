@@ -91,6 +91,7 @@
     "proj6.para6": "Layout optimized for multiple device sizes",
     "proj6.para7": "This project marked the beginning of my journey into frontend development. It helped me understand how structure and style work together to create accessible and user-friendly experiences across devices.",
     "proj6.para8": "<a href=\"https://mihaelaraducu.github.io/html-css-project/\" target=\"_blank\" style=\"text-decoration: underline; font-weight: bold;\">View the live project</a>",
+    "git.noscript": "JavaScript is disabled in your browser. Please enable it to view the content of this page.",
     "git.repo": "My GitHub Repo",
     "git.hub": "The latest GitHub Repo",
     "ct.message": "Send Me a Message",
